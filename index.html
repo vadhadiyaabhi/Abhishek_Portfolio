@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- magnific-popup css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- CSS file -->
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
 
@@ -21,236 +24,424 @@
 </head>
 
 <body>
-    <header>
-        <nav class="custom-navbar">
-            <div class="fixed">
-                <!-- sticky will be added on mobile view-->
-                <div class="inner-width">
-                    <span href="" class="logo">Abhishek</span>
-                    <button class="menu-toggler">
-                        <!-- active will be added on mobile view-->
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <div class="custom-navbar-menu">
-                        <!-- active will be added on mobile view-->
-                        <a href="#home" class="custom-nav-link"><img src="images/home.svg" alt="" height="20"
-                                width="20"> Home</a>
-                        <a href="#about" class="custom-nav-link"><img src="images/human.svg" alt="" height="20"
-                                width="20"> About </a>
-                        <a href="#services" class="custom-nav-link"> <img src="images/service.svg" alt="" height="20"
-                                width="20"> Services</a>
-                        <a href="#projects" class="custom-nav-link"><img src="images/project.jpg" alt="" height="20"
-                                width="20"> Projects</a>
-                        <a href="#contact" class="custom-nav-link"><img src="images/contact.svg" alt="" height="20"
-                                width="20"> Contact</a>
-                    </div>
-                    <div class="mail py-3 text-center">
-                        <img src="images/Abhi.jpg" height="40" width="40" alt="" class="mx-1">
-                        <a href="mailto:abhi.tatva@gmail.com">
-                            <div class="fw-bold">Abhishek</div>
-                            <div>abhi.tatva@gmail.com</div>
-                        </a>
+    <div class="" id="blur">
+        <header>
+            <nav class="custom-navbar">
+                <div class="fixed">
+                    <!-- sticky will be added on mobile view-->
+                    <div class="inner-width">
+                        <span href="" class="logo">Abhishek</span>
+                        <button class="menu-toggler">
+                            <!-- active will be added on mobile view-->
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="custom-navbar-menu">
+                            <!-- active will be added on mobile view-->
+                            <a href="#home" class="custom-nav-link"><img src="images/home.svg" alt="" height="20"
+                                    width="20"> Home</a>
+                            <a href="#about" class="custom-nav-link"><img src="images/human.svg" alt="" height="20"
+                                    width="20"> About </a>
+                            <a href="#services" class="custom-nav-link"> <img src="images/service.svg" alt=""
+                                    height="20" width="20"> Services</a>
+                            <a href="#projects" class="custom-nav-link"><img src="images/project.jpg" alt="" height="20"
+                                    width="20"> Projects</a>
+                            <a href="#contact" class="custom-nav-link"><img src="images/contact.svg" alt="" height="20"
+                                    width="20"> Contact</a>
+                        </div>
+                        <div class="mail py-3 text-center">
+                            <img src="images/Abhi.jpg" height="40" width="40" alt="" class="mx-1">
+                            <a href="mailto:abhi.tatva@gmail.com">
+                                <div class="fw-bold">Abhishek</div>
+                                <div>abhi.tatva@gmail.com</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <div class="pages">
-        <div class="home" id="home">
-            <div class="img text-center"><img src="Images/Abhi6.jpg" alt="" height="250px" width="200px"></div>
-            <h1 class="heading">Abhishek Vadhadiya</h1>
-            <p class="my-2" style="color: black;">Let's Build Something Greate ToGether.</p>
-            <div>
-                <button class="my-1">Contact</button><button>Download CV</button>
+        <div class="pages">
+            <div class="home" id="home">
+                <!-- <div class="img text-center"><img src="Images/Abhi6.jpg" alt="" height="250px" width="200px"></div> -->
+                <div class="img text-center"><img src="Images/abhi11.jpg" alt="" height="300px" width="250px"></div>
+                <h1 class="heading">Abhishek Vadhadiya</h1>
+                <p class="">Let's Build Something Greate ToGether.</p>
+                <div>
+                    <button class="">Contact</button><a download href="images/Abhishek_Resume.pdf" ><button>Download CV</button></a>
+                </div>
             </div>
-        </div>
 
-        <div class="about p-5" id="about">
-            <h2 class="heading">
-                About Me
-            </h2>
-            <div class="row">
-                <div class="content col-md-6 col-12">
-                    <p>
-                        Hii, I'm <b> Abhishek Vadhadiya</b>
-                    </p>
-                    <p>I'm a Computer Engineer, full-stack Web Developer working in PHP and .Net back-end technologies.
-                        I am from Jamnagar, Gujarat. <br><br>
-                        As I've <b> qualified GATE-2021, </b>
-                        I've a strong fundamentals of each core CSE subjects like <b> DS, OS, ADA, CN, DBMS, TOC, and CD
-                        </b>
-                        <!-- I mostly like ti work with back-end part where some logical thinkings are required to play with data and databse.  -->
-                        <!-- <br>
+            <div class="about p-5" id="about">
+                <h2 class="heading">
+                    About Me
+                </h2>
+                <div class="row">
+                    <div class="content col-md-6 col-12">
+                        <p>
+                            Hii, I'm <b> Abhishek Vadhadiya</b>
+                        </p>
+                        <p>I'm a Computer Engineer, full-stack Web Developer working in PHP and .Net back-end
+                            technologies.
+                            I am from Jamnagar, Gujarat. <br><br>
+                            As I've <b> qualified GATE-2021, </b>
+                            I've a strong fundamentals of each core CSE subjects like <b> DS, OS, ADA, CN, DBMS, TOC,
+                                and CD
+                            </b>
+                            <!-- I mostly like to work with back-end part where some logical thinkings are required to play with data and databse.  -->
+                            <!-- <br>
                             I am very enthusiasm to learn new things, and I am very much interesting in Cyber Security field and recently I've started exploring for same. -->
-                    </p>
+                        </p>
 
-                    <h3 class="heading">
-                        What are my skills ?
-                    </h3>
-                    <div class="row skills">
-                        <div class="col-md-6 col-12 fw-bold">
-                            <div class="skill-name">Vanilla PHP</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="90"></div>
+                        <h3 class="heading">
+                            What are my skills ?
+                        </h3>
+                        <div class="row skills">
+                            <div class="col-md-6 col-12 fw-bold">
+                                <div class="skill-name">Vanilla PHP</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-12 fw-bold">
-                            <div class="skill-name">.Net MVC</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="80"></div>
+                            <div class="col-md-6 col-12 fw-bold">
+                                <div class="skill-name">.Net MVC</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="80"></div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- <div class="col-md-6 col-12 fw-bold">
+                            <!-- <div class="col-md-6 col-12 fw-bold">
                             <div class="skill-name">Laravel</div> </div> -->
-                        <div class="col-md-6 col-12 fw-bold">
-                            <div class="skill-name">MySQL</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="70"></div>
+                            <div class="col-md-6 col-12 fw-bold">
+                                <div class="skill-name">MySQL</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="70"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 fw-bold">
+                                <div class="skill-name">SQL Server</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="70"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 fw-bold">
+                                <div class="skill-name">Java Script</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="60"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 fw-bold">
+                                <div class="skill-name">HTML CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12 fw-bold">
-                            <div class="skill-name">SQL Server</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="70"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12 fw-bold">
-                            <div class="skill-name">Java Script</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="60"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12 fw-bold">
-                            <div class="skill-name">HTML CSS</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="90"></div>
-                            </div>
+
+                        <div class="more-about-me">
+                            <button class="my-1" onclick="blurToggle()">More About
+                                Me</button>
                         </div>
                     </div>
-
-                    <div class="more-about-me">
-                        <button class="my-1">More About Me</button>
+                    <div class="myPic col-md-6 col-12 px-5">
+                        <img src="Images/Abhi9.jpg" alt="" width="400px" height="600px" class="myPic">
                     </div>
                 </div>
-                <div class="myPic col-md-6 col-12 px-5">
-                    <img src="Images/Abhi9.jpg" alt="" width="400px" height="600px" class="myPic">
-                </div>
             </div>
-        </div>
 
-        <div class="services p-5" id="services">
-            <h2 class="heading">
-                What I Do
-            </h2>
-            <div class="cards">
-                <div class="web-development">
-                    <i class="fas fa-code fa-3x"></i>
-                    <h3 class="heading">Web Development</h3>
-                    <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
-                </div>
-                <div class="front-end-development">
-                    <i class="fas fa-user-shield fa-3x"></i>
-                    <h3 class="heading">Front End Development</h3>
-                    <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
-                </div>
-                <div class="Security-testing">
-                    <i class="fas fa-user-shield fa-3x"></i>
-                    <h3 class="heading">Security Testing</h3>
-                    <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
-                </div>
-                <div class="web-development">
-                    <i class="fas fa-user-shield fa-3x"></i>
-                    <h3 class="heading">Web Development</h3>
-                    <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="projects p-5" id="projects">
-            <h2 class="heading">
-                Projects
-            </h2>
-            <div class="cards">
-                <div class="web-development">
-                    <i class="fas fa-code fa-3x"></i>
-                    <h3 class="heading">Web Development</h3>
-                    <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
-                </div>
-                <div class="web-development">
-                    <i class="fas fa-user-shield fa-3x"></i>
-                    <h3 class="heading">Front End Development</h3>
-                    <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
-                </div>
-                <div class="web-development">
-                    <i class="fas fa-user-shield fa-3x"></i>
-                    <h3 class="heading">Security Testing</h3>
-                    <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
-                </div>
-                <div class="web-development">
+            <div class="services p-5" id="services">
+                <h2 class="heading">
+                    What I Do
+                </h2>
+                <div class="cards">
+                    <div class="web-development">
+                        <!-- <i class="fas fa-globe fa-3x"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+                            class="bi bi-globe" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                        </svg>
+                        <h3 class="heading">Web Development</h3>
+                        <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
+                    </div>
+                    <div class="front-end-development">
+                        <i class="fas fa-code fa-3x"></i>
+                        <h3 class="heading">Front End Development</h3>
+                        <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
+                    </div>
+                    <div class="Security-testing">
+                        <i class="fas fa-user-shield fa-3x"></i>
+                        <h3 class="heading">Security Testing</h3>
+                        <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
+                    </div>
+                    <!-- <div class="web-development">
                     <i class="fas fa-user-shield fa-3x"></i>
                     <h3 class="heading">Web Development</h3>
                     <a href="">Know More <img src="images/shape-2.png" alt="" width="25" class="mx-1"></a>
+                </div> -->
                 </div>
             </div>
-        </div>
 
-        <div class="contact p-5" id="contact">
-            <h2 class="heading">
-                Contact Me
-            </h2>
-            <p>You can reach out to me If you need any help regarding web-development for your business purpose or
-                personal, Or also regarding Web Security.</p>
-            <div class="row">
-                <div class="contact-cards col-md-6 col-12">
-                    <div class="phone">
-                        <img src="Images/phone.png" alt="" height="40" width="40">
-                        <div>
-                            <h3 class="heading pb-0">Phone</h3>
-                            <div class="phone1"><a href="tel: +91 9925177550">+91 9925177550</div></a>
-                            <div class="phone1"><a href="tel: +91 9173338738">+91 9173338738</div></a>
+            <div class="projects p-5" id="projects">
+                <h2 class="heading">
+                    Projects
+                </h2>
+                <h3 class="heading">Campus-placement Management</h3>
+                <div class="works works1">
+                    <a href="images/e-placement/Screenshot (112).png" class="work">
+                        <img src="Images/e-placement/Screenshot (112).png" class="img-fluid">
+                        <div class="info">
+                            <h3>Campus-placement</h3>
+                            <span class="category">Click Here</span>
                         </div>
-                    </div>
-                    <div class="contact-email">
-                        <img src="Images/email.png" alt="" height="40" width="40">
-                        <div>
-                            <h3 class="heading pb-0">Email</h3>
-                            <div class="email1"><a href="mailto: abhi.tatva@gmail.com">abhi.tatva@gmail.com</a></div>
-                            <div class="email2"><a
-                                    href="mailto: vadhadiyaabhishek@gmail.com">vadhadiyaabhishek@gmail.com</a></div>
+                    </a>
+                    <a href="Images/e-placement/Screenshot (113).png" class="work">
+                        <img src="Images/e-placement/Screenshot (113).png" class="img-fluid">
+                        <div class="info">
+                            <h3>TheGreateComics</h3>
+                            <span class="category">Click Here</span>
                         </div>
-                    </div>
-                    <div class="address">
-                        <img src="Images/location.png" alt="" height="40" width="40" style="color: white;">
-                        <div>
-                            <h3 class="heading pb-0">Location</h3>
-                            <div class="address ">Tirupati Society, Jamjodhpur <br> Gujarat, India</div>
+                    </a>
+                    <a href="Images/e-placement/Screenshot (125).png" class="work">
+                        <img src="Images/e-placement/Screenshot (125).png" class="img-fluid">
+                        <div class="info">
+                            <h3>TheGreateComics</h3>
+                            <span class="category">Click Here</span>
                         </div>
-                    </div>
+                    </a>
+                    <a href="Images/e-placement/Screenshot (129).png" class="work">
+                        <img src="Images/e-placement/Screenshot (129).png" class="img-fluid">
+                        <div class="info">
+                            <h3>Whether Info</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a>
+                    <a href="Images/e-placement/Screenshot (135).png" class="work">
+                        <img src="Images/e-placement/Screenshot (135).png" class="img-fluid">
+                        <div class="info">
+                            <h3>Whether Info</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a>
+                    <a href="Images/e-placement/Screenshot (133).png" class="work">
+                        <img src="Images/e-placement/Screenshot (133).png" class="img-fluid">
+                        <div class="info">
+                            <h3>Whether Info</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="contact-form col-md-6 col-12">
-                    <form action="" method="post">
-                        <input type="text" placeholder="Full Name" name="name">
-                        <input type="email" placeholder="Email" name="email">
-                        <textarea name="message" id="" cols="20" rows="10" placeholder="Message"></textarea>
-                        <button type="submit" name="submit" class="button">Send Message</button>
-                    </form>
+                <h3 class="heading">TheGreateComics</h3>
+                <div class="works works2">
+                    <a href="images/TheGreateComics/Screenshot (114).png" class="work">
+                        <img src="Images/TheGreateComics/Screenshot (114).png" class="img-fluid">
+                        <div class="info">
+                            <h3>Campus-placement</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a>
+                    <a href="images/TheGreateComics/Screenshot (115).png" class="work">
+                        <img src="Images/TheGreateComics/Screenshot (115).png" class="img-fluid">
+                        <div class="info">
+                            <h3>TheGreateComics</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a>
+                    <a href="images/TheGreateComics/Screenshot (116).png" class="work">
+                        <img src="Images/TheGreateComics/Screenshot (116).png" class="img-fluid">
+                        <div class="info">
+                            <h3>TheGreateComics</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a>
+                    <a href="images/TheGreateComics/comicsImage(1).png" class="work">
+                        <img src="Images/TheGreateComics/comicsImage(1).png" class="img-fluid">
+                        <div class="info">
+                            <h3>Whether Info</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a>
+                    <!-- <a href="images/TheGreateComics/SubscribeOTP(1).png" class="work">
+                        <img src="Images/TheGreateComics/SubscribeOTP(1).png" class="img-fluid">
+                        <div class="info">
+                            <h3>Whether Info</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a> -->
+                    <a href="images/TheGreateComics/SubscribeOTP(1).png" class="work">
+                        <img src="Images/TheGreateComics/SubscribeOTP(1).png" class="img-fluid">
+                        <div class="info">
+                            <h3>Whether Info</h3>
+                            <span class="category">Click Here</span>
+                        </div>
+                    </a>
                 </div>
             </div>
+
+            <div class="contact p-5" id="contact">
+                <h2 class="heading">
+                    Contact Me
+                </h2>
+                <p>You can reach out to me If you need any help regarding web-development for your business purpose or
+                    personal, Or also regarding Web Security.</p>
+                <div class="row">
+                    <div class="contact-cards col-md-6 col-12">
+                        <div class="phone">
+                            <img src="Images/phone.png" alt="" height="40" width="40">
+                            <div>
+                                <h3 class="heading pb-0">Phone</h3>
+                                <div class="phone1"><a href="tel: +91 9925177550">+91 9925177550</div></a>
+                                <div class="phone1"><a href="tel: +91 9173338738">+91 9173338738</div></a>
+                            </div>
+                        </div>
+                        <div class="contact-email">
+                            <img src="Images/email.png" alt="" height="40" width="40">
+                            <div>
+                                <h3 class="heading pb-0">Email</h3>
+                                <div class="email1"><a href="mailto: abhi.tatva@gmail.com">abhi.tatva@gmail.com</a>
+                                </div>
+                                <div class="email2"><a
+                                        href="mailto: vadhadiyaabhishek@gmail.com">vadhadiyaabhishek@gmail.com</a></div>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <img src="Images/location.png" alt="" height="40" width="40" style="color: white;">
+                            <div>
+                                <h3 class="heading pb-0">Location</h3>
+                                <div class="address ">Tirupati Society, Jamjodhpur <br> Gujarat, India</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form col-md-6 col-12">
+                        <form action="" method="post">
+                            <input type="text" placeholder="Full Name" name="name">
+                            <input type="email" placeholder="Email" name="email">
+                            <textarea name="message" id="" cols="20" rows="10" placeholder="Message"></textarea>
+                            <button type="submit" name="submit" class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+
+    <div class="popup" id="popup">
+        <div class="personal">
+            <h2 class="heading">Personal Info</h2>
+            <div>
+                <ul>
+                    <li>FirstName: <span>Abhishek</span></li>
+                    <li>LastName: <span>Vadhadiya</span></li>
+                    <li>Age: <span>21 Years</span></li>
+                    <li>Nationality: <span>Indian</span></li>
+                    <li>Email: <span>vadhadiyaabhishek@gmail.com</span></li>
+                    <li>Mobile: <span>+91 9925177550</span></li>
+                    <li>Address: <span>Jamjodhpur, Gujarat</span></li>
+                    <li>Languages: <span>Englsih, Hindi, Gujarati</span></li>
+                    <li>Hobies: <span>Cricket, Travelling</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="achievements">
+            <h2 class="heading">Achievements</h2>
+            <ul>
+                <li><span class="fw-bold"><i>GATE-2021 Qualified</i></span> in 3rd year of BE</li>
+                <li><span>JEE-mains qualified</span> in 2018</li>
+                <li><span>Gujcet-2018:</span> 90.25 / 120</li>
+                <li><span>6+ months</span> of experience as a Full-stack Developer.</li>
+            </ul>
+            <a href="Images/Abhishek_Resume.pdf" download><button>Download CV</button></a>
+        </div>
+        <div class="experience">
+            <h2 class="heading">Experience</h2>
+            <div>
+                <img src="images/briefcase.png" alt="">
+                <div class="content">
+                    <div class="year">2022 - current</div>
+                    <div class="exp-heading">ASP.net Developer</div>
+                    <div>@ Tatvasoft, Ahmedabad</div>
+                    <div class="description">
+                        Working as a Full-stack Developer and improving skills.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/briefcase.png" alt="">
+                <div class="content">
+                    <div class="year">2 Months</div>
+                    <div class="exp-heading">PHP Developer</div>
+                    <div>@ Team4Progress Technologies, Delhi</div>
+                    <div class="description">
+                        Built complex PHP tools to reduce parsing of PHP code and was working on start-up
+                        project.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="education">
+            <h2 class="heading">Education</h2>
+            <div>
+                <img src="images/briefcase.png" alt="">
+                <div class="content">
+                    <div class="year">2022</div>
+                    <div class="exp-heading">BE - Computer Engineering</div>
+                    <div>From: Gujarat Technological University</div>
+                    <div class="description">
+                        <span> CPI: 8.14 / 10 </span><span class="mx-2"> CPI: 8.41 / 10 </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/briefcase.png" alt="">
+                <div class="content">
+                    <div class="year">2018</div>
+                    <div class="exp-heading">12th - GHSEB</div>
+                    <div>From: Gujarat Board</div>
+                    <div class="description">
+                        <span> Per: 85.33 </span><span class="mx-2"> Gujcet: 90.25 / 120 </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/briefcase.png" alt="">
+                <div class="content">
+                    <div class="year">2016</div>
+                    <div class="exp-heading">10th - GSEB</div>
+                    <div>From: Gujarat Board</div>
+                    <div class="description">
+                        <span> Per: 88.33 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="close-btn" id="close-btn" onclick='blurToggle()'>
+        <img src="images/plus@2x.png" alt="">
+    </div>
+
+
+
+
+
+
+
+
     <!--  -----------------------JS files-------------------  -->
     <!-- bootstrap bundle -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
 
     <!-- jquery cdnjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- magnific-popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- JS file -->
     <script src="JS/script.js"></script>
 </body>

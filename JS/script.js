@@ -28,8 +28,21 @@ $(document).ready(function () {
         $('.custom-navbar-menu').toggleClass("active");
     });
 
-
+    $(".works").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {enabled:true}
+    });
 });
+
+function blurToggle(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('blur');
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+    var close_btn = document.getElementById('close-btn');
+    close_btn.classList.toggle('active');
+}
 
 // const currentLocation = location.href;
 // const menuItem = document.querySelectorAll('a');

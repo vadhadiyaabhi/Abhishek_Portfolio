@@ -152,6 +152,11 @@ a.active{
 }
 /* ---------------------------------- */
 
+#blur.blur{
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}
 
 .home{
     height: 100vh;
@@ -177,7 +182,7 @@ a.active{
 }
 .home img:hover{
     /* transform: scale(1.2, 1.2) rotate(5deg) translatey(10px); */
-    transform: scale(1.2, 1.2) translatey(10px);
+    transform: scale(1.1, 1.1) translatey(10px);
 }
 
 .home h1{
@@ -188,7 +193,6 @@ a.active{
 }
 
 .home p{
-    font-weight: bold;
     font-size: large;
 }
 
@@ -196,17 +200,17 @@ button{
     padding: 6px 25px;
     font-size: 16px;
     margin: 0 15px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     border-radius: 38px;
     border: 1.5px solid rgb(77, 73, 112);
     transition: .3s;
 }
 
 button:hover{
-    background-color: white;
+    background-color: black;
     color: var(--theme-color1);
-    color: black;
+    color: white;
 }
 /* button{
     padding: 6px 25px;
@@ -302,7 +306,8 @@ h3{
 .services, .contact{
     background-color: var(--theme-color1);
 }
-.services i{
+
+.services i,svg{
     color: black;
     transition: .5s ease-in-out;
 }
@@ -310,9 +315,11 @@ h3{
 .cards{
     width: 100%;
     display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
  .cards div{
-    width: 25%;
+    width: 33%;
     margin: 0 20px;
     background-color: white;
     border-radius: 9px;
@@ -338,9 +345,75 @@ h3{
     transform: skewX(5deg);
     transform: skewY(-5deg);
 }
-.services .cards div:hover i,.services .cards div:hover h3{
+.services .cards div:hover i,.services .cards div:hover svg, .services .cards div:hover h3{
     color: white;
 }
+
+.projects .works{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 20px rgb(17, 37, 85);
+    border-radius: 7px;
+}
+.projects .works .work{
+    width: calc(33% - 15px);
+    height: 170px;
+    overflow: hidden;
+    border-radius: 7px;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+.projects>h3{
+    padding: 0px 0px 20px 0px;
+}
+.work img{
+    height: 100%;
+    width: 100%;
+    transition: .3s linear;
+}
+.work::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(77, 73, 112, 0.7);
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s linear;
+}
+.work .info{
+    position: absolute;
+    z-index: 2;
+    top: 45px;
+    left: 35px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    text-align: left;
+    background-color: transparent !important;
+    transform: scale(0);
+    transition: .4s linear;
+    opacity: 0;
+}
+.work .info h3{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(17, 37, 85);
+}
+
+.work:hover::before,
+.work:hover .info
+{
+    opacity: 1;
+    transform: scale(1);
+}
+
 
 .contact h2{
     padding: 40px 0 10px 0;
@@ -393,4 +466,141 @@ color:  rgb(136, 133, 167);
     padding: 7px 20px;
 }
 
+/* -----------------------------popup--------------------------- */
+#popup{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    box-shadow: 0 0 50px rgb(17, 37, 85);
+    /* box-shadow: 0 0 5px rgb(77, 73, 112); */
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    overflow: scroll;
+    background-color: white;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
 
+}
+.popup .heading{
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px groove rgb(77, 73, 112);
+    display: inline-block;
+}
+.popup>div{
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+.popup ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+}
+.popup li{
+    min-width: calc(50% - 10px);
+    list-style: none;
+    margin: 5px 5px;
+    overflow: hidden;
+}
+.popup li span{
+    color: rgb(17, 37, 85);
+    font-weight: bold;
+}
+.popup .achievements{
+    font-size: 18px;
+}
+
+.popup .achievements li
+{
+    list-style-type: square;
+    list-style-position: inside;
+    width: 100%;
+}
+
+.popup .experience>div,.popup .education>div{
+    display: flex;
+    margin: 20px 20px 20px 0px;
+}
+.popup img{
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgb(77, 73, 112);
+    background-color: rgb(17, 37, 85);
+    z-index: 2;
+
+}
+.popup .content{
+    position: relative;
+}
+.popup .content div{
+    margin: 8px;
+    position: relative;
+}
+.popup .experience .content::before,.popup .education .content::before{
+    content: "";
+    height: 95%;
+    position: absolute;
+    bottom: 0px;
+    left: -27px;
+    width: 1px;
+    background-color: rgb(77, 73, 112);
+    z-index: 0;
+}
+.year{
+    padding: 5px 15px;
+    border-radius: 40px;
+    background-color: rgb(240, 241, 255);
+    display: inline-block;
+}
+.exp-heading{
+    color: rgb(17, 37, 85);
+    font-weight: bold;
+}
+.close-btn{
+    position: fixed;
+    right: 7.5%;
+    top: 0px;
+    background-color: transparent !important;
+    transition: 0.2s;
+    visibility: hidden;
+}
+.close-btn img{
+    background-color: rgb(17, 37, 85);
+    border: 2px solid rgb(17, 37, 85);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#popup.active{
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+} 
+
+#close-btn.active{
+    visibility: visible;
+    opacity: 2;
+    top: 35px;
+}
+
+
+/* ------------------Magnific Popup-close Button------------- */
+.mfp-figure button{
+    background-color: transparent;
+}
